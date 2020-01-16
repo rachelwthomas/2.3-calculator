@@ -6,7 +6,8 @@
   font-size: 20px; }
   .calculator button {
     width: 100%;
-    border: solid 1px black; }
+    border: solid 1px black;
+    color: #FFF; }
 
 button:active {
   background-color: #000;
@@ -15,12 +16,13 @@ button:active {
 
 .input-area {
   background-color: #31394B;
-  height: 80px; }
+  height: 80px;
+  border: solid 1px #000; }
 
 .key {
   padding-right: 0px;
   text-align: center;
-  border: solid 1px black; }
+  border: solid 1px #000; }
 
 .orange {
   background-color: #F2A23B; }
