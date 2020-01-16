@@ -3,9 +3,26 @@
 // }
 // document.querySelector('button').addEventListener,("click",pushNumber());
 
-document.querySelector(".button").addEventListener("click", pushNumber);
+// document.querySelector(".button").addEventListener("click", pushNumber);
+(function() {
+  'use strict';
+
 
 function pushNumber() {
-  alert("you pushed a button");
+
+let numbers = document.querySelectorAll('.number');
+
+for (let i=0; i < numbers.length; i=i+1) {
+  numbers[i].addEventListener("click", pushNumber);
+}
+
+alert("you pushed a button");
 
 }
+// function pushNumber() {
+//   alert("you pushed a button");
+//
+// }
+
+
+})();
