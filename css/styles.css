@@ -8,6 +8,11 @@
     width: 100%;
     border: solid 1px black; }
 
+button:active {
+  background-color: #000;
+  color: #FFF;
+  opacity: .5; }
+
 .input-area {
   background-color: #31394B;
   height: 80px; }
