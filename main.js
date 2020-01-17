@@ -21,9 +21,10 @@ for (let i=0; i < numbers.length; i=i+1) {
   numbers[i].addEventListener("click", pushNumber);
 
 }
-
+// returns the value of the  button
 function pushNumber() {
-  alert("you pushed a number");
+  let x = document.querySelector('.number').value;
+  alert(x);
 }
 
 // ****************************************************PUSH OPERATOR FUNCTION
