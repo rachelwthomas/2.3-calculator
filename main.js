@@ -49,7 +49,6 @@
  let test = null
  let num1 = ""
  let num2 = ""
-
  let opp = ""
 
  console.log(num1);
@@ -85,8 +84,7 @@ let operators = document.querySelectorAll('.operator');
 
 function pushOperator() {
   test = true;
-
- console.log(`${event.target.value}`);
+  opp = (`${event.target.value}`);
 
 }
 
@@ -99,9 +97,22 @@ for (let i=0; i < operators.length; i=i+1) {
 document.getElementById('equals').addEventListener('click',equals);
 
 
-function equals() {
-  opp = (event.target)
+function equals(e) {
+  // opp = (event.target.value)
+  console.log("hello",opp );
+  // console.log(Number(num1)+Number(num2));
+  if (opp == "+"){
   console.log(Number(num1)+Number(num2));
+  }
+  else if (opp == "-"){
+    console.log(Number(num1)-Number(num2));
+  }
+  else if (opp == "*"){
+    console.log(Number(num1)*Number(num2));
+  }
+  else if (opp == "/") {
+    console.log(Number(num1)/Number(num2));
+  }
 
 }
 
