@@ -33,18 +33,25 @@
 // *********************************************************************
 
 
+
+
+
+
  let numbers = document.querySelectorAll('.number');
 
 
 
  let pushNumber = (event) => {
- let value = (`${event.target.value}`);
+ let value = Number(`${event.target.value}`);
 
-console.log(Number.isInteger(Number(value)));
-
+ console.log(value);
 
 
  }
+
+ 
+
+
 
  for (let i=0; i < numbers.length; i=i+1) {
  numbers[i].addEventListener('click', pushNumber);
@@ -52,6 +59,24 @@ console.log(Number.isInteger(Number(value)));
 
 
  }
+
+
+//  let sum = () => {
+//    answer = (pushNumber()+pushNumber())
+//  }
+//
+//  let minus = () => {
+//
+//  }
+//
+//  let multiply = () => {
+//
+//  }
+//
+// let divide = () => {
+//
+// }
+
 
 
 
@@ -72,6 +97,8 @@ let operators = document.querySelectorAll('.operator');
 function pushOperator() {
  console.log(`${event.target.value}`);
 }
+
+
 
 
 for (let i=0; i < operators.length; i=i+1) {
