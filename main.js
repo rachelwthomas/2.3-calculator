@@ -46,7 +46,7 @@
 
  let numbers = document.querySelectorAll('.number');
  let operatorbtn = document.querySelectorAll('.operator');
- let opRan = null
+ let test = null
  let num1 = ""
  let num2 = ""
 
@@ -58,7 +58,7 @@
    let value = event.target.value;
 
 
-   if (opRan !== true) {
+   if (test !== true) {
      num1 = num1.concat(value)
      console.log("num1", num1)
    }else {
@@ -84,9 +84,9 @@
 let operators = document.querySelectorAll('.operator');
 
 function pushOperator() {
- opp = (`${event.target.value}`);
- console.log(opp);
-   // if opRan = true;
+  test = true;
+
+ console.log(`${event.target.value}`);
 
 }
 
@@ -101,21 +101,21 @@ for (let i=0; i < operators.length; i=i+1) {
 //
 //
 //
-if pushOperator == "+" {
-  return n1 + n2;
-}
-
-if pushOperator == "-" {
-  return n1 - n2;
-}
-
-if pushOperator == "*" {
-  return n1 * n2;
-}
-
-if pushOperator == "/" {
-  return n1 / n2;
-}
+// if pushOperator == "+" {
+//   return n1 + n2;
+// }
+//
+// if pushOperator == "-" {
+//   return n1 - n2;
+// }
+//
+// if pushOperator == "*" {
+//   return n1 * n2;
+// }
+//
+// if pushOperator == "/" {
+//   return n1 / n2;
+// }
 
 
 
