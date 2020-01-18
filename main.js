@@ -45,24 +45,31 @@
 
 
  let numbers = document.querySelectorAll('.number');
+ let operatorbtn = document.querySelectorAll('.operator');
+ let opRan = null
+ let num1 = ""
+ let num2 = ""
+
+ let opp = ""
+
+ console.log(num1);
 
  let pushNumber = (event) => {
-   let value = Number(`${event.target.value}`);
-   let num1 = value
-   let num2 = value
-   let opp = null
-   if (o) {
-     console.log("eyes")
+   let value = event.target.value;
+
+
+   if (opRan !== true) {
+     num1 = num1.concat(value)
+     console.log("num1", num1)
+   }else {
+     num2 = num2.concat(value)
+     console.log("num2", num2)
    }
 
-
-
-
-   console.log(value);
 }
 // console.log(pushNumber(2));
 
-
+   let answer = num1 + opp + num2
 
 
 
@@ -77,7 +84,10 @@
 let operators = document.querySelectorAll('.operator');
 
 function pushOperator() {
- console.log(`${event.target.value}`);
+ opp = (`${event.target.value}`);
+ console.log(opp);
+   // if opRan = true;
+
 }
 
 for (let i=0; i < operators.length; i=i+1) {
@@ -91,21 +101,21 @@ for (let i=0; i < operators.length; i=i+1) {
 //
 //
 //
-// if pushOperator == "+" {
-//   return n1 + n2;
-// }
-//
-// if pushOperator == "-" {
-//   return n1 - n2;
-// }
-//
-// if pushOperator == "*" {
-//   return n1 * n2;
-// }
-//
-// if pushOperator == "/" {
-//   return n1 / n2;
-// }
+if pushOperator == "+" {
+  return n1 + n2;
+}
+
+if pushOperator == "-" {
+  return n1 - n2;
+}
+
+if pushOperator == "*" {
+  return n1 * n2;
+}
+
+if pushOperator == "/" {
+  return n1 / n2;
+}
 
 
 
