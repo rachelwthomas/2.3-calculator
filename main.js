@@ -69,7 +69,7 @@
 }
 // console.log(pushNumber(2));
 
-   let answer = num1 + opp + num2
+   // let answer = num1 + opp + num2
 
 
 
@@ -95,13 +95,23 @@ for (let i=0; i < operators.length; i=i+1) {
 }
 
 
+
+document.getElementById('equals').addEventListener('click',equals);
+
+
+function equals() {
+  opp = (event.target)
+  console.log(Number(num1)+Number(num2));
+
+}
+
 // if n1 = true {
 //
 // }
 //
 //
 //
-// if pushOperator == "+" {
+// if opp == "+" {
 //   return n1 + n2;
 // }
 //
