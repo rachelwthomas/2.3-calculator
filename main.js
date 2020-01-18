@@ -28,6 +28,12 @@
 
 
 
+// fat arrow notation
+// let pushNumber = () => {
+//  }
+//
+//
+
 
 
 // *********************************************************************
@@ -37,76 +43,69 @@
 
 
 
+
  let numbers = document.querySelectorAll('.number');
 
-
-
  let pushNumber = (event) => {
- let value = Number(`${event.target.value}`);
+   let value = Number(`${event.target.value}`);
+   let num1 = value
+   let num2 = value
+   let opp = null
+   if (o) {
+     console.log("eyes")
+   }
 
- console.log(value);
 
 
- }
 
- 
+   console.log(value);
+}
+// console.log(pushNumber(2));
+
+
 
 
 
  for (let i=0; i < numbers.length; i=i+1) {
  numbers[i].addEventListener('click', pushNumber);
-
-
-
  }
 
-
-//  let sum = () => {
-//    answer = (pushNumber()+pushNumber())
-//  }
-//
-//  let minus = () => {
-//
-//  }
-//
-//  let multiply = () => {
-//
-//  }
-//
-// let divide = () => {
-//
-// }
-
-
-
-
-// fat arrow notation
-// let pushNumber = () => {
-//  }
-//
-//
 
 
 // ****************************************************PUSH OPERATOR FUNCTION
 
 let operators = document.querySelectorAll('.operator');
 
-
-
-
 function pushOperator() {
  console.log(`${event.target.value}`);
 }
 
-
-
-
 for (let i=0; i < operators.length; i=i+1) {
   operators[i].addEventListener("click", pushOperator);
-
 }
 
 
+// if n1 = true {
+//
+// }
+//
+//
+//
+// if pushOperator == "+" {
+//   return n1 + n2;
+// }
+//
+// if pushOperator == "-" {
+//   return n1 - n2;
+// }
+//
+// if pushOperator == "*" {
+//   return n1 * n2;
+// }
+//
+// if pushOperator == "/" {
+//   return n1 / n2;
+// }
 
 
 
