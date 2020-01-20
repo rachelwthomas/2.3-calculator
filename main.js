@@ -90,6 +90,9 @@ function pushOperator() {
   test = true;
   opp = (`${event.target.value}`);
 
+
+
+
 }
 
 for (let i=0; i < operators.length; i=i+1) {
@@ -103,7 +106,28 @@ document.getElementById('equals').addEventListener('click',equals);
 // This is targeting the "screen on the caluculator"
 let input = document.querySelector('.input-area');
 
+
+// targets clear button on the calculator
+let clear = document.getElementById('ac');
+
+// event listener for clean button
+document.getElementById('ac').addEventListener('click',clearDisplay);
+
+
+function clearDisplay() {
+  console.log("monkey");
+
+}
+
+
+
+
+// let ac = null;
+
 function equals(e) {
+
+
+
   // opp = (event.target.value)
   console.log("hello",opp );
   // console.log(Number(num1)+Number(num2));
@@ -128,7 +152,23 @@ function equals(e) {
     return input.innerHTML = answer4;
   }
 
+
+
 }
+
+
+
+
+// targeting the clear button
+// let clear = document.getElementById('ac').reset();
+//
+
+
+
+
+
+
+
 
 
 
