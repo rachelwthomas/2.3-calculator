@@ -108,14 +108,15 @@ let input = document.querySelector('.input-area');
 
 
 // targets clear button on the calculator
-let clear = document.getElementById('ac');
+
 
 // event listener for clean button
 document.getElementById('ac').addEventListener('click',clearDisplay);
 
 
 function clearDisplay() {
-  console.log("monkey");
+  let clear = 0
+  return input.innerHTML = clear;
 
 }
 
