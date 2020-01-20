@@ -104,20 +104,24 @@ function equals(e) {
   console.log("hello",opp );
   // console.log(Number(num1)+Number(num2));
   if (opp == "+"){
-  let answer1 = (Number(num1)+Number(num2));
-  return input.textContent = answer1;
+    let answer1 = (Number(num1)+Number(num2));
+  // displays answer on calculator screen
+    return input.innerHTML = answer1;
   }
   else if (opp == "-"){
     let answer2 =(Number(num1)-Number(num2));
-    return input.textContent = answer2;
+  // displays answer on calculator screen
+    return input.innerHTML = answer2;
   }
   else if (opp == "*"){
     let answer3 =(Number(num1)*Number(num2));
-    return input.textContent = answer3;
+  // displays answer on calculator screen
+    return input.innerHTML = answer3;
   }
   else if (opp == "/") {
     let answer4 =(Number(num1)/Number(num2));
-    return input.textContent = answer4;
+  // displays answer on calculator screen
+    return input.innerHTML = answer4;
   }
 
 }
