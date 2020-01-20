@@ -96,25 +96,33 @@ for (let i=0; i < operators.length; i=i+1) {
 
 document.getElementById('equals').addEventListener('click',equals);
 
+// This is targeting the "screen on the caluculator"
+let input = document.querySelector('.input-area');
 
 function equals(e) {
   // opp = (event.target.value)
   console.log("hello",opp );
   // console.log(Number(num1)+Number(num2));
   if (opp == "+"){
-  console.log(Number(num1)+Number(num2));
+  let answer1 = (Number(num1)+Number(num2));
+  return input.textContent = answer1;
   }
   else if (opp == "-"){
-    console.log(Number(num1)-Number(num2));
+    let answer2 =(Number(num1)-Number(num2));
+    return input.textContent = answer2;
   }
   else if (opp == "*"){
-    console.log(Number(num1)*Number(num2));
+    let answer3 =(Number(num1)*Number(num2));
+    return input.textContent = answer3;
   }
   else if (opp == "/") {
-    console.log(Number(num1)/Number(num2));
+    let answer4 =(Number(num1)/Number(num2));
+    return input.textContent = answer4;
   }
 
 }
+
+
 
 // if n1 = true {
 //
