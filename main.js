@@ -59,10 +59,14 @@
 
    if (test !== true) {
      num1 = num1.concat(value)
-     console.log("num1", num1)
+     let number1 = ("num1", num1);
+     // inserts number 1 into the calcultor screen
+     return input.innerHTML = number1;
    }else {
      num2 = num2.concat(value)
-     console.log("num2", num2)
+     let number2 =("num2", num2);
+     // inserts number 1 into the calcultor screen
+     return input.innerHTML = number2;
    }
 
 }
@@ -79,7 +83,7 @@
 
 
 // ****************************************************PUSH OPERATOR FUNCTION
-
+// targeting operator buttons
 let operators = document.querySelectorAll('.operator');
 
 function pushOperator() {
