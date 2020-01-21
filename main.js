@@ -112,7 +112,9 @@ document.getElementById('ac').addEventListener('click',clearDisplay);
 
 
 function clearDisplay() {
-  let clear = 0
+  let num1 = 0;
+  let num2 = 0;
+  let clear = 0;
   return input.innerHTML = clear;
 
 }
