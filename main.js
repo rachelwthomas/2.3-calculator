@@ -90,9 +90,6 @@ function pushOperator() {
   test = true;
   opp = (`${event.target.value}`);
 
-
-
-
 }
 
 for (let i=0; i < operators.length; i=i+1) {
@@ -101,7 +98,7 @@ for (let i=0; i < operators.length; i=i+1) {
 
 
 
-document.getElementById('equals').addEventListener('click',equals);
+
 
 // This is targeting the "screen on the caluculator"
 let input = document.querySelector('.input-area');
@@ -120,14 +117,12 @@ function clearDisplay() {
 
 }
 
-
+document.getElementById('equals').addEventListener('click',equals);
 
 
 // let ac = null;
 
 function equals(e) {
-
-
 
   // opp = (event.target.value)
   console.log("hello",opp );
@@ -151,14 +146,40 @@ function equals(e) {
     let answer4 =(Number(num1)/Number(num2));
   // displays answer on calculator screen
     return input.innerHTML = answer4;
+  }else if (opp == "%") {
+    let answer5 =(Number(num1))/(100);
+    return input.innerHTML = answer5;
+}
+  else if(opp == "+/-") {
+    let answer6 = opposite(num1);
+    console.log(answer6);
+    return input.innerHTML = answer6;
   }
-
-
-
 }
 
 
+// function percent(num1,opp) {
+//   if (opp =="%") {
+//     let answer5 =(Number(num1))/(100);
+//     console.log(input.innerHTML = answer5);
+//   }
+// }
 
+
+
+
+function opposite(num1) {
+
+    if (num1 < 0)
+    {
+        num1 = Math.abs(num1);
+    }
+    else
+    {
+        num1 = -(num1);
+    }
+    return num1;
+}
 
 // targeting the clear button
 // let clear = document.getElementById('ac').reset();
