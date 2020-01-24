@@ -46,10 +46,10 @@
 
  let numbers = document.querySelectorAll('.number');
  let operatorbtn = document.querySelectorAll('.operator');
- let test = null
+ // let test = null
  let num1 = ""
  let num2 = ""
- let opp = ""
+ let opp = null
 
  console.log(num1);
 
@@ -57,8 +57,9 @@
    let value = event.target.value;
 
 
-   if (test !== true) {
-     num1 = num1.concat(value)
+   if (!opp) {
+     console.log('here');
+     num1 = num1.concat(value) || value;
      let number1 = ("num1", num1);
      // inserts number 1 into the calcultor screen
      return input.innerHTML = number1;
@@ -87,7 +88,7 @@
 let operators = document.querySelectorAll('.operator');
 
 function pushOperator() {
-  test = true;
+  opp = true;
   opp = (`${event.target.value}`);
 
 }
@@ -112,10 +113,10 @@ document.getElementById('ac').addEventListener('click',clearDisplay);
 
 
 function clearDisplay() {
-  let num1 = 0;
-  let num2 = 0;
-  let clear = 0;
-  return input.innerHTML = clear;
+  num1 = ""
+  num2 = ""
+  opp = null
+  input.innerHTML = 0;
 
 }
 
@@ -156,6 +157,12 @@ function equals(e) {
     let answer6 = opposite(num1);
     console.log(answer6);
     return input.innerHTML = answer6;
+  }
+  else if (opp = "0") {
+    let answer7 = clearDisplay();
+    console.log(clearDisplay(num1));
+    console.log(clearDisplay(num2));
+    console.log(answer7);
   }
 }
 
